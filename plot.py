@@ -6,6 +6,10 @@ df.columns = ["author", "timestamp"]
 df.timestamp = pandas.to_datetime(df.timestamp)
 df["date"] = df.timestamp.dt.date
 
+# Filter by pseudo
+#pseudo = "toto"
+#df = df[df.author == pseudo]
+
 print(df.head())
 print(df.info())
 
